@@ -1,0 +1,19 @@
+package order;
+
+import geo.Position;
+
+public class StandardPackage implements Deliverable {
+    private double weight;
+    private Position destination;
+
+    public StandardPackage(double weight, Position destination) {
+        this.weight = weight;
+        this.destination = destination;
+    }
+
+    @Override
+    public double getWeight() { return weight; }
+
+    @Override
+    public Position getDestination() { return destination; }
+}
